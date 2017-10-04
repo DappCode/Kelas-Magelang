@@ -2,21 +2,21 @@
 ## Hari Ke-2  
 ## Kelas-Magelang Mas Arif 
 
+### Membuat HTML Template 
+
+ - Bagian Header 
+    - Nyambung / Meraja'ah yang kemarin
+ - Bagian Header-Content 
 
 
+### Kesimpulan : 
+- Kurang Teliti 
+- Masalah Font 
+- Jarak 
+- Penamaan Class lebih di spesifikasikan 
 
 
-
-
-
-
-
-
-
-
-
-
-### Hal yang harus anda ketahui :
+### Hal yang harus anda ketahui dalam Free-Lancer :
 - bahasa inggris 
 - personal branding
 
@@ -33,6 +33,7 @@
 
 
 ### Pertanyaan : 
-- Seberapa besar orang indonesia mendapatkan pekerjaan free-lancer dengan skill yang kurang ? 
-`Sedikit Sulit karna skill bisa mendapatkan pekerjaan ddengan cepat ?`
+
+#### Seberapa besar orang indonesia mendapatkan pekerjaan free-lancer dengan skill yang kurang ? 
+> Sedikit Sulit karna skill bisa mendapatkan pekerjaan ddengan cepat ?
 
