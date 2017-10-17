@@ -1,19 +1,49 @@
 $image-bg : url(assets/bg-header.jpg);
-
+$bg-section: #0081FF;
+$color-1: #8799A3;
+$black-1: #252525;
+$btn:     #1CBBB3;
 
 /*Globlal*/
-@import url('https://fonts.googleapis.com/css?family=Leckerli+One|Montserrat:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One|Montserrat:300,400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Cambay:400,700|Coustard:400,900');
 
-.container-fluid {
-    background-image: $image-bg;
-    height: 800px;
+body {
     font-family: 'Montserrat', sans-serif;
-    position: relative;
+}
+
+#header {
+    background-image: $image-bg;
+    height: 850px;
+    background-position: -75px -128px;
+    background-size: 2000px;
+    background-repeat: no-repeat;
+}
+
+.header-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 850px;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: white;
+    border-color: white;
+    font-size: 16px;
+}
+
+.navbar {
+    padding: 50px 0 0;
+}
+
+.navbar-brand img {
+    width: 167px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0 1.5rem;
     color: white;
+    font-weight: 500;
+    
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -27,23 +57,145 @@ $image-bg : url(assets/bg-header.jpg);
 .btn-outline-warning {
     border-radius: 50px;
     padding: 8px 35px;
+    font-weight: 500;
+    border: 2px solid #ffff00;
+    color: #FFFF00;
+    box-shadow: 5px solid #FFFF00;
 }
 
-.col-4 {
-    top: 200px;
+.btn-outline-warning:hover {
+    background-color: #ffff00;
+    color: white;
+    border: 2px solid #ffff00;
+}
+
+.col-6 {
+    top: 135px;
     color: #FFFFFF;
 }
 
 .display-5 {
     color: white;
     font-family: 'Leckerli One', cursive;
-    font-size: 20px;
+    font-size: 34px;
+}
+
+.display-3 {
+    font-size: 57px;
+    font-weight: 900;
+    padding: 20px 0 0;
 }
 
 .display-3 .name{
     color: #0081FF;
-    font-size: 30px; 
+} 
+
+.display-4 {
+    font-size: 38px;
+    padding-bottom: 20px;
+}
+
+.lead {
+    color: #636363;
+    padding-bottom: 10px;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.btn-primary {
+    background-color: #636363;
+    border-color: #636363;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: grey;
+    border-color: grey;
+}
+
+#section-head {
+    background-color: $bg-section;
+    height: 500px;
+}
+
+//
+.display-2 {
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 15px;
+}
+
+.content {
+    padding: 0 10px;
+}
+
+.col-6 .content-2 {
+    font-size: 19px;
+}
+
+.section-2 {
+    padding: 65px 0 0; 
+}
+
+#section-content {
+    background-color: #007af3; 
+    height: 310px;
+    color: white;
+    padding: 90px 0;
+}
+
+.col-1 img {
+    height: 60px;
+    display: inline;
+}
+
+.col-3 .display-4 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: -3px;
+}
+
+.col-3 p {
+    font-size: 17px;
+}
+
+#section-media {
+    background-color: $bg-section;
+    padding: 90px 0 100px;
+    
+}
+
+.media-content {
+    font-size: 20px;
+    color: white;
+    display: inline;
 }
 
 
+.media-content p {
+    display: inline-block;
+}
+
+.media {
+    display: inline;
+}
+
+.media li {
+    display: inline;
+    color: white;
+}
+
+.media li a i {
+    color:#3a9dff;
+    padding: 0 15px;
+    font-size: 23px;
+}
+
+.media li.active a i {
+    color: white;
+}
 
