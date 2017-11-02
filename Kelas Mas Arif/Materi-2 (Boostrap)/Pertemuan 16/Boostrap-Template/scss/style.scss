@@ -1,201 +1,613 @@
-$image-bg : url(assets/bg-header.jpg);
-$bg-section: #0081FF;
-$color-1: #8799A3;
-$black-1: #252525;
-$btn:     #1CBBB3;
 
-/*Globlal*/
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Leckerli One', cursive;
+$font-3:  'Cambay', sans-serif;
+$font-4: 'Coustrad', serif; 
+$transparan: transparent;
+$default: #fff;
+$active: #8799a3;
+$btn: #ffff00;
+$text-clr: #636363;
+$heading: #0081ff;
+$color-1: #007EF9;
+$color-2: #FCFA2F;
+$color-3: #8799A3;
+$color-4: #BBC7CD;
+$color-5: #636363;
+$color-6: #E91E62;
+$black-1: #252525;
+
+
+// Global
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One|Montserrat:300,400,500,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Cambay:400,700|Coustard:400,900');
 
+h1, h2, h3, h4, h5, h6, p {
+	letter-spacing: 0.8px;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+	font-family: $font-1;
+	font-size: 14px;
 }
 
-#header {
-    background-image: $image-bg;
-    height: 850px;
-    background-position: -75px -128px;
+.container-fluid.main {
+	background-image: url("assets/bg-header.jpg");
+	background-position: -75px -128px;
     background-size: 2000px;
-    background-repeat: no-repeat;
+	height: 840px;	
+	padding: 0;
 }
-
 .header-bg {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 850px;
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+}
+.container {
+	width: 1040px;
+	max-width: 100%;
+}
+.text-left {
+	color: $default;
+	font-family: $font-3;
+	margin: 20px 0;
+}
+h2.text-left,
+h1.text-left,
+h5.mt-0,
+p.card-text,
+.text-center h2 {
+	font-family: $font-1;
+}
+h3.text-left,
+.text-center h3 {
+	font-family: $font-2;
+}
+.text-center h2,
+.text-center h3 {
+	color: $default;
+}
+p.text-left {
+	font-size: 22px;
+	color: $text-clr;
+	max-width: 450px;
 }
 
-.navbar-light .navbar-toggler {
-    background-color: white;
-    border-color: white;
-    font-size: 16px;
+.btn {
+	border-radius: 50px 50px;
+	font-size: 12px!important;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
-.navbar {
-    padding: 50px 0 0;
+.col.align-self-start,
+ul.social-menu {
+	padding: 0;
 }
 
-.navbar-brand img {
-    width: 167px;
+.col-md-4 p {
+	font-size: 17px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0 1.5rem;
-    color: white;
-    font-weight: 500;
-    
+
+// Navbar
+.bg-dark {
+	background-color: $transparan!important;
+}
+.navbar-brand img{
+	height: 50px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #8799A3; 
+.navbar-dark .navbar-nav .nav-link{
+	font-size: 18px;
+	padding: 0 20px;
+	color: $default;
 }
-
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #8799A3
+.navbar-dark .navbar-nav .nav-item.active .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: $active;
 }
-
 .btn-outline-warning {
-    border-radius: 50px;
-    padding: 8px 35px;
-    font-weight: 500;
-    border: 2px solid #ffff00;
-    color: #FFFF00;
-    box-shadow: 5px solid #FFFF00;
+	padding: 10px 35px;
+	color: $btn!important;
+	border-color: $btn!important;
+	background-color: $transparan;
+	background-image: none;
+	box-shadow: 0px 1px 10px $btn;
 }
-
 .btn-outline-warning:hover {
-    background-color: #ffff00;
-    color: white;
-    border: 2px solid #ffff00;
+	color: $default!important;
 }
 
-.col-6 {
-    top: 135px;
-    color: #FFFFFF;
+// Intro
+header .container:first-child {
+	margin-top: 30px;
+}
+.col.align-self-start {
+	margin-top: 150px;
+
+}
+.align-self-start h2.text-left {
+	font-size: 34px;
+}
+.align-self-start h1.text-left {
+	font-size: 51px;
+	text-transform: capitalize;
+	font-weight: 900;
+}
+.btn.btn-dark {
+	padding: 12px 30px;
+	background-color: #1f1f1f;
+	border-color: #1f1f1f;
+}
+.btn.btn-dark:hover {
+	background-color: #3e3d3d;
 }
 
-.display-5 {
-    color: white;
-    font-family: 'Leckerli One', cursive;
-    font-size: 34px;
+// Section
+.container-fluid {
+	background-color: #0081FF;
+	padding: 100px 0 60px;
+}
+.row {
+	color: $default;
+	margin: 0;
+}
+.row h2.text-left {
+	font-weight: 900;
+	font-size: 36px;
+}
+.row p.text-left {
+	max-width: 100%;
+	color: $default;
+	margin: 80px 0 0;
+}
+.row p.text-left:last-child {
+	margin-top: 0;
 }
 
-.display-3 {
-    font-size: 57px;
-    font-weight: 900;
-    padding: 20px 0 0;
+// Service
+div.container-fluid {
+	background-color: #007af3;
+	padding: 80px 0 35px;
+	margin-top: 60px;
+}
+.media img {
+	height: 50px;
+}
+h5.mt-0 {
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+// Social-Menu
+.social {
+	margin-top: 70px;
+}
+.social-menu li {
+	display: inline-block;
+}
+.social-menu li a {
+	padding: 0 10px;
+}
+.social-menu li.active a i,
+.social-menu li a i:hover {
+	color: $default;
+}
+.social-menu li a i {
+	font-size: 22px;
+	color: #3a9dff;
+	margin-top: 5px;
 }
 
-.display-3 .name{
-    color: #0081FF;
+// Portofolio
+.container-fluid.header-section {
+	background-color: $default;
+	padding-bottom: 0;
+	margin: 0;
+}
+.header-section h2 {
+	text-transform: capitalize;	
+	color: #252525;
+}
+.header-section h3 {
+	color: #8799A3;
+}
+
+.btn-view-all {
+	background-color: #1CBBB3!important;
+	border-radius: 50px;
+	border: none;
+	margin-left: 80px;
+	padding: 15px 35px;
+	box-shadow: 0 6px 20px #1cbbb3!important;
+}
+
+// Gallery
+.card-body {
+	padding: 0;
+}
+.card-img-top.primary-photo {
+	height: 365px;
+	object-fit: cover;
+}
+.col-md-6 .primary-photo {
+	transform: scale(1.5);
+}
+.col-md-12 .primary-photo {
+	transform: scale(1.2);
+}
+.card-img-top {
+	height: 235px;
+}
+.col-md-3 .img-2 {
+	transform: scale(1.1);
+	height: 600px;
+	object-fit: cover;
+}
+.col-12.col-md-3,
+.col-12.col-md-6 {
+	overflow: hidden;
+
+}
+.card-img-overlay {
+	background-color: rgba(0,0,0,0.72);
+	color: $default;
+	opacity: 0;
+	transition: 0.5s ease;
+}
+.card-img-overlay:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.img-active {
+	opacity: 1;
+}
+.card-img-overlay h6 {
+	color: #b5b4b4;
+	padding: 20% 0 0;
 } 
 
-.display-4 {
-    font-size: 38px;
-    padding-bottom: 20px;
+.card-img-overlay p {
+	font-size: 16px;
+	font-weight: 700;
+	max-width: 80%;
+	margin: 0 auto;
+}
+.card-img-overlay img {
+	height: 15px;
+	margin: 10px 5px;
 }
 
-.lead {
-    color: #636363;
-    padding-bottom: 10px;
-    font-size: 25px;
-    line-height: 1;
+// Testimonial
+.main-testimonial {
+	background-image: url("assets/bg-client.jpg");
+	background-size: 145%;
+	padding: 0;
+}
+.main-testimonial .container {
+	padding: 150px 0 60px;;
+}
+.text-center h3,
+.text-center h2 {
+	margin-bottom: 25px;
+}
+.text-center h2 {
+	font-weight: 900;
+}
+.carousel {
+	margin-top: 65px;
+	color: $default;
+}
+// .carousel-item {
+// 	padding: 0 150px;
+// }
+.carousel-inner,
+.carousel-item .media p,
+.carousel-item .media h5 {
+	margin: 0;
+}
+.carousel-item p {
+	font-family: 'Coustard', serif;
+	font-size: 18px;
+	margin: 25px auto;
+}
+.carousel-item .media img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.carousel-item .media h5 {
+	color: #fff000;
+	font-size: 13px;
+}
+.carousel-item .media p {
+	font-size: 13px;
+	margin-top: 5px!important;
+	color: #636363;
+}
+.client-logo {
+	margin: 80px 0 80px;
+}
+.client-logo .col-md-3 {
+	margin-top: 30px;
+}
+.client-logo img {
+	width: 150px;
+}
+.client-logo img:hover {
+	opacity: 0.7;
+	cursor: pointer;
 }
 
-.btn-primary {
-    background-color: #636363;
-    border-color: #636363;
-    padding: 18px 35px;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
+.paragraph-head-1 {
+	font-size: 15px;
+	font-weight: 100;
+	padding: 0 0 20px 0;
+	color: $color-3;
+	max-width: 80%;
 }
 
-.btn-primary:hover {
-    background-color: grey;
-    border-color: grey;
+.btn-blog {
+	padding: 15px 30px;
+	background-color: yellow; 
 }
 
-#section-head {
-    background-color: $bg-section;
-    height: 500px;
+.header-blog {
+	background-color: $default;
+	padding: 80px 0;
 }
 
-//
-.display-2 {
-    font-size: 40px;
-    font-weight: 900;
-    padding-top: 15px;
+.row h2.head-1 {
+	font-size: 33px;
+	color: black;
 }
 
-.content {
-    padding: 0 10px;
+.header-blog p {
+	font-size: 18px;
+	font-weight: 700;
 }
 
-.col-6 .content-2 {
-    font-size: 19px;
+.header-blog h3 {
+	font-size: 25px;
+	color: $color-3;
 }
 
-.section-2 {
-    padding: 65px 0 0; 
+.header-blog img {
+	height: 35px;
+	margin: 10px;
 }
 
-#section-content {
-    background-color: #007af3; 
-    height: 310px;
-    color: white;
-    padding: 90px 0;
+.post-1  {
+	background-image: url('assets/blog-1.png');
+	height: 449px;
+	padding: 100px 60px;
+	margin: 20px 0 20px 20px;
 }
 
-.col-1 img {
-    height: 60px;
-    display: inline;
+.post-1  h3 {
+	font-size: 20px;
+	font-weight: 900;	
 }
 
-.col-3 .display-4 {
-    font-size: 23px;
-    font-weight: 700;
-    margin-bottom: -3px;
+.post-2 {
+	background-color: #0081FF;
+	padding: 35px;
+	font-family: $font-4;	
+	margin: 20px 20px 20px 0;
 }
 
-.col-3 p {
-    font-size: 17px;
+.post-2 h4 {
+	font-family: $font-1;
+	font-size: 15px;
+	font-weight: 900;
+	color: $default;
 }
 
-#section-media {
-    background-color: $bg-section;
-    padding: 90px 0 100px;
-    
+.post-2 .cont-post-2 {
+	color: white;
+	line-height: 1;
+	font-weight: 900;
+	font-size: 20px;
+	max-width: 100%;
+	padding: 10px 61px;
 }
 
-.media-content {
-    font-size: 20px;
-    color: white;
-    display: inline;
+.post-1 .col-12 h1 {
+	font-size: 30px;
+	font-weight: 900;
+	padding: 15px 0;
 }
 
-
-.media-content p {
-    display: inline-block;
+.post-1 .col-12 p {
+	max-width: 100%;
+	font-size: 15px;
+	font-weight: 100;
 }
 
-.media {
-    display: inline;
+.post-2 .name-post {
+	color: #fff000;
+	font-size: 15px;
+	font-weight: 300; 
+	font-family: $font-4;
 }
 
-.media li {
-    display: inline;
-    color: white;
+.img-blog-2 {
+	height: 230px;
+	background-image: url('assets/blog-2.png');
 }
 
-.media li a i {
-    color:#3a9dff;
-    padding: 0 15px;
-    font-size: 23px;
+.background-img-1 {
+	padding: 42px 20px;
+	text-align: center;
 }
 
-.media li.active a i {
-    color: white;
+.background-img-2 {
+	padding: 35px 33px;
 }
 
+.img-blog-2 p, 
+.img-blog-4 p {
+	font-size: 15px;
+	color: $color-3;
+}
+
+.img-blog-2 .blog-2-cont,
+.img-blog-4 h3 {
+	color: $black-1;
+}
+
+.img-blog-3 {
+	height: 230px;
+	background-image: url('assets/blog-3.png');
+}
+
+.img-blog-4 {
+	background-color: white;
+	padding: 30px 40px;
+	height: 230px;
+}
+
+.img-blog-4 h3 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.img-blog-4 p {
+	font-size: 15px;
+	padding: 8px 0;	
+	font-weight: 400;
+}
+
+.img-blog-5 {
+	background-color: #E91E62;
+	padding: 105px 0;
+	text-align: center;
+	height: 230px;
+}
+
+.img-blog-5 h2 {
+	font-size: 20px;
+	color: white;
+}
+
+/* Contacts */
+
+.contacts {
+	background-color: rgba(39, 38, 38, 0.8);
+	background-image: url('assets/bg-contact.jpg');
+	background-position: -267px -185px;
+	padding: 0;
+	background-size: 2100px;
+}
+
+.header-contact {
+	background-color: rgba(10, 10, 10, 0.9);
+	height: 100%;
+	padding: 100px 0;
+}
+
+.header-contact p {
+	font-size: 17px;
+	padding-bottom: 1px;
+}
+
+.header-contact ul {
+	padding: 25px 0;
+}
+
+.contact-head {
+	font-family: $font-2;
+	font-size: 30px;
+} 
+
+.contact-head-2 {
+	font-size: 37px;
+	font-weight: 900;
+	padding: 10px 0 35px;
+}
+
+.address {
+	color: #636363;
+	display: inline;
+}
+
+.address-1 {
+	color: white;
+
+}
+
+.phone {
+	display: inline;
+}
+
+.contact-link li {
+	display: block;
+}
+
+.contact-link li a{
+	padding: 0;
+	font-size: 17px;
+}
+
+.social-contacts li a i{
+	font-size: 17px;
+	color: #636363;
+}
+
+.form-name-email {
+	padding: 33px 0 25px;
+}
+
+.form-name {
+	background-color: #424141;
+	border: 2px solid #5A5959;
+	padding: 13px 30px;
+	font-size: 13px;
+	border-radius: 50px;
+}
+
+.form-name:focus, 
+.form-text:focus {
+	color: white;
+	background-color: rgba(82, 82, 82, 0.12);
+	border: 2px solid grey;	
+}
+
+.form-text {
+	border-radius: 25px;
+	background-color: #424141;
+	border: 2px solid #5A5959;
+	padding: 15px 30px 50px;
+	font-size: 13px;
+}
+
+.btn-send {
+	font-size: 20px;
+	margin: 25px 0;
+	padding: 18px 50px;
+}
+
+.header-footer {
+	background-color: rgba(7, 7, 7, 0.98);
+	padding: 5px 0;
+}
+
+.footer-main .row .col-12 p {
+	font-size: 13px;
+	color: #636363;
+	padding: 40px 0;
+	margin: 0;
+}
+
+.grey {
+	color: #7E7D7D;
+}
+
+.grey-2 {
+	color: #94A4AA;
+}
+
+.back-top {
+	float: right;
+}
